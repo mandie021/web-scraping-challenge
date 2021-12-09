@@ -7,8 +7,8 @@ import pandas as pd
 
 
 # setup mongo connection
-conn = "mongodb://localhost:27017"
-client = pymongo.MongoClient(conn)
+#conn = "mongodb://localhost:27017"
+#client = pymongo.MongoClient(conn)
 
 def main_scrape():
     # Setup splinter
