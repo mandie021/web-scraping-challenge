@@ -22,12 +22,12 @@ def main_scrape():
 
 
     mars_data= {
-                "Mars News" : news_title, 
-                "Mars Paragraph" : news_p, 
-                'Featured Image' : feature_img,
-                "Mars Table" : mars_web,
-                "Mars Earth Web" : mars_earth_web,
-                "Hemisphere Images Titles" : hemisphere_image_urls
+                "news_title" : news_title, 
+                "news_p" : news_p, 
+                'feature_img' : feature_img,
+                "mars_web" : mars_web,
+                "mars_earth_web" : mars_earth_web,
+                "hemisphere_img_urls" : hemisphere_image_urls
                 }
 
     # Quit the browser

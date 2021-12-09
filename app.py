@@ -15,6 +15,7 @@ def home():
 
     # Find one record of data from the mongo database
     mars = mongo.db.mars.find_one()
+    print(mars)
 
     # Return template and data
     return render_template("index.html", mars=mars)
