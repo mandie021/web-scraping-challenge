@@ -18,6 +18,7 @@ def home():
     print(mars)
 
     # Return template and data
+    
     return render_template("index.html", mars=mars)
 
 

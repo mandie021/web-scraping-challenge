@@ -98,7 +98,7 @@ def img_scrape(browser):
         sample = browser.find_link_by_text('Sample').first
         img_url = sample['href']
         title_search=browser.find_by_css("h2.title").text
-        hemisphere_image_urls.append({"title": title_search,'img_url':'https://marshemispheres/' + img_url})
+        hemisphere_image_urls.append({"title": title_search,'img_url': img_url})
         print(hemisphere_image_urls)
         browser.back()
 
