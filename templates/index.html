@@ -54,23 +54,17 @@
       <div class="page-header">
         <h2 class="text-center">Mars Hemispheres</h2>
       </div>
-
+    <div class="container-fluid" style="display: flex;"></div>
       {% for hemisphere in mars.hemisphere_img_urls %}
-        <div class="container-fluid" style="display: flex;">
-          <div class = "row">
-            <div class="col-sm">
-              <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="Responsive image" class="img-fluid img-thumbnail" >
-              <div class="caption" style="font-size: large; font-weight: bold;">
-                {{hemisphere.title}}
-              </div>
-            </div>
-          
-     {% endfor %}
-
-          
+      <div class = "row col-sm">
+        <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="Responsive image" class="img-fluid img-thumbnail" >
+        <div class="caption" style="font-size: large; font-weight: bold;">
+          {{hemisphere.title}} 
         </div>
-     </div>
+      </div>
+     {% endfor %}  
     </div>
+   
   </body>
 
 </html>
